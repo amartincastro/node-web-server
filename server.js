@@ -13,4 +13,12 @@ app.get('/', (req, res) => {
   });
 });
 
+
+app.get('/about', (req, res) => {
+  res.send('About Page');
+});
+
+
+// /bad - send back JSON with errorMessage property 'Error handling request'
+
 app.listen(3000);
